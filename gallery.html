@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('image/high-angle-forklift-blue-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item { 
+            border-radius: 10px;
+            overflow: hidden; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: #fff; 
+            margin-bottom: 20px; 
+        }
+
+       .gallery-item img {
+           width: 100%;
+           height: auto;
+           display: block; 
+        }
+
+        .gallery-item h3 { 
+           padding: 10px;
+           margin: 0;
+           background-color: #f0f0f0; 
+           color: #333;
+        }
+        .gallery-vid {
+           display: flex;
+           justify-content: center; 
+        }
+        .gallery-vid {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.gallery-vid video {
+    width: 800px;
+}
+
+.explore-more p { 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffcc00;
+    padding: 5px 0; 
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: white; 
+}
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #00f;
+            text-decoration: none;
+        }
+        .section h2 { 
+            text-align: center;
+        }
+        .section-title {
+            color: #aa6000; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+        .section h3 {
+            text-align: center; 
+            margin-bottom: 10px;
+        }
+        .section p {
+            text-align: center; 
+        }
+        body {
+           display: grid;
+           grid-template-rows: auto 1fr auto; 
+           min-height: 100vh;
+           margin: 0;
+        }
+
+        .main-content {
+           grid-row: 2; 
+        }
+
+        footer {
+           grid-row: 3; 
+        }
+        #myGif {
+           width: 500px; 
+           height: auto;  
+           display: block; 
+           margin: 20px auto; 
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <nav>
+            <a href="home.html" >HOME</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="form.html">FORM</a>
+          </nav>
+    </nav>
+    <section id="gallery" class="section"> 
+        <h2 class="section-title">Gallery</h2>
+        <div class="intro-text"> 
+        <h3> See Lulumove in Action.</h3>
+        <p>We pride ourselves on providing reliable and efficient delivery services.  Explore our gallery to see how we're making a difference.</p>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+              <h3></h3>
+              <img src="image/courier service.png" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+              <h3></h3>
+              <img src="image/img-ACC-DISTRIBUTION-HiRes.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <h3></h3>
+                <img src="image/door-to-door-delivery-service-500x500.webp" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <h3></h3>
+                <img src="image/Courier-Company-Near-Me-Ohio-3.jpg" alt="Gallery Image 2">
+            </div>
+        </div>  <!-- End of gallery div -->
+        <figure class="gallery-vid">
+            <video width="800" controls poster="image/video-poster.jpg">
+                <source src="image/Blue Animated Simple Minimalist Travel Vlog How To Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+        <div class="explore-more">
+        <p><a href="services.html">Explore our services!</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>All rights reserved 2025 | &copy; 2025 Lulumove</p>
+        <p>123 Guyong Road, Sta. Maria, Bulacan, Philippines</p>
+        <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>

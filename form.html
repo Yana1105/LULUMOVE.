@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('image/high-angle-forklift-blue-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 20px;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            width: 120%;
+            max-width: 500px;
+            padding: 20px;
+            background: #ec9d27;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 1px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .form {
+            text-align: center;
+        }
+        .section h2 { 
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #00f;
+            text-decoration: none;
+        }
+        .section-title {
+            color: #aa6000; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+        body {
+           display: grid;
+           grid-template-rows: auto 1fr auto; 
+           min-height: 100vh;
+           margin: 0;
+        }
+        .commitment-statement {
+          text-align: center;
+          padding: 10px 10;
+          font-size: 1.1em;
+          font-weight: bold;
+          color: #333;
+        }
+        .main-content {
+           grid-row: 2; 
+        }
+        footer {
+           grid-row: 3; 
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <nav>
+            <a href="home.html" >HOME</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="form.html">FORM</a>
+          </nav>
+    </nav>
+    <section id="form" class="section form">
+        <h2 class="section-title">Order Form</h2>
+        <p style="text-align: center; font-style: bold; margin-bottom: 10px;">Please submit your details using the form below.</p>
+    <div class="form-container">
+        <form action="#">
+            <!-- Contact Details -->
+            <input type="text" name="sender_name" placeholder="Sender's Name" required>
+            <input type="email" name="email" placeholder="Sender's Email" required>
+            <input type="text" name="receiver_name" placeholder="Receiver's Name" required>
+            <input type="tel" name="receiver_contact" placeholder="Receiver's Contact Number" required>
+
+            <!-- Pick-Up and Delivery -->
+            <input type="text" name="pickup_address" placeholder="Pick-Up Address" required>
+            <input type="text" name="delivery_address" placeholder="Delivery Address" required>
+
+            <!-- Package Details -->
+            <input type="text" name="package_weight" placeholder="Package Weight (e.g., 5kg)" required>
+            <input type="text" name="package_dimensions" placeholder="Dimensions (e.g., 10x15x20cm)">
+            <select name="package_type" required>
+                <option value="" disabled selected>Select Package Type</option>
+                <option value="regular">Regular</option>
+                <option value="fragile">Fragile</option>
+                <option value="perishable">Perishable</option>
+            </select>
+
+            <!-- Delivery Preferences -->
+            <select name="delivery_type" required>
+                <option value="" disabled selected>Select Delivery Type</option>
+                <option value="standard">Standard Delivery</option>
+                <option value="express">Express Delivery</option>
+            </select>
+            <input type="checkbox" name="insurance" id="insurance">
+            <label for="insurance">Add Insurance</label>
+
+            <!-- Date and Time -->
+            <label for="pickup_date">Pick-Up Date:</label>
+            <input type="date" id="pickup_date" name="pickup_date" required>
+            <label for="pickup_time">Pick-Up Time:</label>
+            <input type="time" id="pickup_time" name="pickup_time" required>
+
+            <label for="quoteRequest">Request a quote</label>
+            <input type="checkbox" name="quoteRequest" id="quoteRequest">
+
+            <!-- Special Instructions -->
+            <textarea name="special_instructions" placeholder="Special Instructions (optional)" rows="3"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="form-container">
+        <form action="submit_form.php" method="post">
+            <section class="commitment-statement">
+                <p>Committed to meeting your delivery needs.</p>
+            </section>
+            </form>
+    </div>
+    </section>
+
+    <footer>
+        <p>All rights reserved 2025 | &copy; 2025 Lulumove</p>
+        <p>123 Guyong Road, Sta. Maria, Bulacan, Philippines</p>
+        <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
